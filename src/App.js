@@ -1,6 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
+import GitHubLogo from './pictures/github.svg';
+import ToDoCard from './components/to-do-card';
+import AddForm from './components/to-do-add-form';
+
+// let incrementalId = 0;
+const TODODATA = [
+  {todo: 'Something', id: 0}
+
+]
+
 
 function App() {
+
+
+
   return (
     <div>
       <header>
@@ -13,13 +26,7 @@ function App() {
         </nav>
       </header>
       <main className="container overflow-hidden">
-        <div className="row mb-3 to-do-input-section">
-          <div className="input-group todo-input-wrapper">
-            <input type="text" className="form-control to-do-input" placeholder="Type in To-Do here" aria-label="To-Do input" />
-            <button className="btn btn-secondary add-todo-btn" type="button">Add To-Do</button>
-          </div>
-          <div className="error-msg"></div>
-        </div>
+        <AddForm />
         <div className="row">
           <div className="filter-wrapper p-0" aria-label="Filter to-dos">
             <button type="button" className="btn btn-outline-secondary filter-btn current active">Active</button>
@@ -28,60 +35,18 @@ function App() {
           </div>
         </div>
         <div className="to-do-grid mt-5 row">
-          <div className="to-do-card-wrapper col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div className="card to-do-card px-2 py-1" id="card1">
-              <div className="card-body">
-                <input type="checkbox" name="to-do-checkbox" id="to-do-checkbox1" className="to-do-checkbox" />
-                <label for="to-do-checkbox1" className="card-body">Lorem ipsum dolor sit amet</label>
-             </div>
-           </div>
-          </div>
-          <div className="to-do-card-wrapper col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div className="card to-do-card px-2 py-1" id="card2">
-              <div className="card-body">
-                <input type="checkbox" name="to-do-checkbox" id="to-do-checkbox2" className="to-do-checkbox" />
-                <label for="to-do-checkbox2" className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</label>
-              </div>
-            </div>
-          </div>
-          <div className="to-do-card-wrapper col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div className="card to-do-card px-2 py-1" id="card3">
-              <div className="card-body">
-                <input type="checkbox" name="to-do-checkbox" id="to-do-checkbox3" className="to-do-checkbox" />
-                <label for="to-do-checkbox3" className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet</label>
-              </div>
-            </div>
-          </div>
-          <div className="to-do-card-wrapper col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div className="card to-do-card px-2 py-1" id="card4">
-              <div className="card-body">
-                <input type="checkbox" name="to-do-checkbox" id="to-do-checkbox4" className="to-do-checkbox" />
-                <label for="to-do-checkbox4" className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
-              </div>
-            </div>
-          </div>
-          <div className="to-do-card-wrapper col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div className="card to-do-card px-2 py-1" id="card5">
-              <div className="card-body">
-                <input type="checkbox" name="to-do-checkbox" id="to-do-checkbox5" className="to-do-checkbox" />
-                <label for="to-do-checkbox5" className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</label>
-              </div>
-            </div>
-          </div>
-          <div className="to-do-card-wrapper col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div className="card to-do-card px-2 py-1" id="card6">
-              <div className="card-body">
-                <input type="checkbox" name="to-do-checkbox" id="to-do-checkbox6" className="to-do-checkbox" />
-                <label for="to-do-checkbox6" className="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
-              </div>
-            </div>
-          </div>
+          <ToDoCard id={0} content='Text filler1'/>
+          <ToDoCard id={1} content='Text filler2'/>
+          <ToDoCard id={2} content='Text filler3'/>
+          <ToDoCard id={3} content='Text filler4'/>
+          <ToDoCard id={4} content='Text filler5'/>
+          <ToDoCard id={5} content='Text filler6'/>
         </div>
       </main>
       <footer className="text-light">
         <p>Check the code on our repository on Github:</p>
-        <a className="mb-2" href="https://github.com/forgerlil/todo-oop-react">
-          <img src="pictures/github.svg" alt="Github Logo"/>
+        <a className="mb-2" href="https://github.com/forgerlil/todo-react-project">
+          <img src={GitHubLogo} alt="Github Logo"/>
         </a>
         <p>© 2022 Copyright:</p>
         <div className="mb-2 collabs">
