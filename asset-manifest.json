@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/forgerlil/todo-react-project/static/css/main.70218b41.css",
+    "main.js": "/forgerlil/todo-react-project/static/js/main.9ff0a9d4.js",
+    "static/js/787.cf6ac061.chunk.js": "/forgerlil/todo-react-project/static/js/787.cf6ac061.chunk.js",
+    "index.html": "/forgerlil/todo-react-project/index.html",
+    "static/media/github.svg": "/forgerlil/todo-react-project/static/media/github.1dbcf7b2491be69d987cad6ab8eacebc.svg",
+    "main.70218b41.css.map": "/forgerlil/todo-react-project/static/css/main.70218b41.css.map",
+    "main.9ff0a9d4.js.map": "/forgerlil/todo-react-project/static/js/main.9ff0a9d4.js.map",
+    "787.cf6ac061.chunk.js.map": "/forgerlil/todo-react-project/static/js/787.cf6ac061.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70218b41.css",
+    "static/js/main.9ff0a9d4.js"
+  ]
+}
