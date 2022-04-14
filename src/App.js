@@ -5,8 +5,12 @@ import AddForm from './components/to-do-add-form';
 
 // let incrementalId = 0;
 const TODODATA = [
-  {todo: 'Something', id: 0}
-
+  {todo: 'First To-Do', id: 0},
+  {todo: 'Second To-Do', id: 1},
+  {todo: 'Third To-Do', id: 2},
+  {todo: 'Fourth To-Do', id: 3},
+  {todo: 'Fifth To-Do', id: 4},
+  {todo: 'Sixth To-Do', id: 5}
 ]
 
 
@@ -35,12 +39,12 @@ function App() {
           </div>
         </div>
         <div className="to-do-grid mt-5 row">
-          <ToDoCard id={0} content='Text filler1'/>
-          <ToDoCard id={1} content='Text filler2'/>
-          <ToDoCard id={2} content='Text filler3'/>
-          <ToDoCard id={3} content='Text filler4'/>
-          <ToDoCard id={4} content='Text filler5'/>
-          <ToDoCard id={5} content='Text filler6'/>
+          <ToDoCard id={TODODATA[0].id} content={TODODATA[0].todo}/>
+          <ToDoCard id={TODODATA[1].id} content={TODODATA[1].todo}/>
+          <ToDoCard id={TODODATA[2].id} content={TODODATA[2].todo}/>
+          <ToDoCard id={TODODATA[3].id} content={TODODATA[3].todo}/>
+          <ToDoCard id={TODODATA[4].id} content={TODODATA[4].todo}/>
+          <ToDoCard id={TODODATA[5].id} content={TODODATA[5].todo}/>
         </div>
       </main>
       <footer className="text-light">
