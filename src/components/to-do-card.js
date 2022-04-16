@@ -2,7 +2,7 @@ import React from 'react';
 
 // props needs to be the input from the add-to-do-input field
 // this is called on an onClick/Enter keypress on the add-to-do-input field or add-to-do-input btn
-function newToDo (props) {
+function NewToDo (props) {
   let CheckboxId = `to-do-checkbox${props.id}`;
   let CardId = `card${props.id}`;
   let toDoContent = props.content;
@@ -19,4 +19,4 @@ function newToDo (props) {
   )
 }
 
-export default newToDo;
+export default NewToDo;
